@@ -21,6 +21,14 @@ import { PDFDownloadLink } from "@react-pdf/renderer";
 import { Loader } from "lucide-react";
 import React, { useRef, useState } from "react";
 
+const event = ({ action, category, label, value }) => {
+  window.gtag("event", action, {
+    event_category: category,
+    event_label: label,
+    value: value,
+  });
+};
+
 const CoverLetter = () => {
   const [coverLetter, setCoverLetter] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -67,12 +75,26 @@ const CoverLetter = () => {
     toast({ title: "Cover Letter generated successfully." });
     setIsSubmitting(false);
     setCoverLetter(coverLetterResponse);
+
+    event({
+      action: "generate-cover-letter",
+      category: "cover-letter",
+      label: "Cover Letter Generated",
+      value: "Generate Cover Letter",
+    });
   };
 
   const handleCopy = async () => {
     await navigator.clipboard.writeText(coverLetter);
 
     toast({ title: "Cover Letter copied successfully" });
+
+    event({
+      action: "copy-cover-letter",
+      category: "cover-letter",
+      label: "Cover Letter Copied",
+      value: "Copy Cover Letter",
+    });
   };
 
   return (
