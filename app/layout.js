@@ -6,10 +6,10 @@ import Navbar from "@/components/common/navbar";
 const manrope = Manrope({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Cover Letter",
-  description: "Generate cover letter using AI",
+  title: "CoverLetterMate",
+  description: "AI-Powered Cover Letters, Tailored for Success",
   icons: {
-    icon: "/vercel.svg",
+    icon: "/logo-color.svg",
   },
 };
 
