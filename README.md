@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## CoverLetterMate: AI-powered Cover Letter Crafting Tool
+CoverLetterMate is an AI-powered tool designed to help job seekers craft tailored and compelling cover letters, increasing their chances of standing out and landing their dream job. This application leverages Google Gemini API to understand your unique qualifications, experiences, and the job requirements, and generates a personalized cover letter that highlights your strengths and suitability for the role.
+
+## Live URL
+https://cover-letter-mate.vercel.app/
+
+## Features
+1. AI-powered Cover Letter Generation: CoverLetterMate utilizes the Google Gemini API to analyze the job description, and your inputs to create a tailored cover letter that effectively communicates your fit for the position.
+
+2. Personalization: Provide your personal information, work experience, skills, and other relevant details to ensure the cover letter accurately represents you.
+
+3. Job Description Analysis: Provide the job description, and CoverLetterMate will identify the key requirements and qualifications to highlight in your cover letter.
+
+4. Formatting and Styling: The generated cover letters are formatted in a professional manner, ensuring a polished and consistent look.
+
+5. Export Options: Export the generated cover letter in a PDF format
+
+## Tech Stack
+Next.js
+React
+Javascript
+Shadcn UI
+Google Gemini API
+Vercel
 
 ## Getting Started
+1. Clone the repository or download the source code.
+2. Install the required dependencies by running npm install.
+3. Set up the Google Gemini API credentials and configuration.
+4. Run the application by executing npm run dev.
+5. Follow the on-screen instructions to provide your information, upload the job description, and generate the tailored cover letter.
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Contributing
+Contributions to the CoverLetterMate project are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request on the project's GitHub repository.
